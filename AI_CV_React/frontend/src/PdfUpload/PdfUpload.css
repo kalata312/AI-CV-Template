@@ -1,0 +1,110 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+
+#upload-div {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 50px;
+  width: 80%;
+  max-width: 1000px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #dcdcdc;
+}
+
+#upload-pdf {
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.preview {
+  width: 80%;
+  height: 500px;
+}
+
+#upload-file-input {
+  display: none;
+}
+
+#upload-file-input {
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+#upload-button {
+  background-color: #3c009d;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 30%;
+}
+
+#upload-button:hover {
+  background-color: #a99eb2;
+  border-color: #856f8d;
+}
+
+.fa.fa-download {
+  font-size: 60px;
+  color: grey;
+}
+
+.fas.fa-download {
+  font-size: 16px;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  #upload-div {
+    width: 90%;
+  }
+}
+
+.input-label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.input-field {
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.remove-btn {
+  background-color: #3c009d;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 21%;
+}
+
+.enter-gmail-label {
+  margin-bottom: 30px;
+}
+
+.error-message {
+  color: red;
+}

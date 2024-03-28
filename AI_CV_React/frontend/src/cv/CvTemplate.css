@@ -1,0 +1,431 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
+
+body {
+  background-color: #fff;
+}
+#cv {
+  min-height: 29.7cm;
+  height: 100%;
+  width: 21cm;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  border: 1px solid rgb(192, 182, 182);
+  background-image: url("/public/image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+  margin-bottom: 50px;
+  padding-right: 40px;
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+}
+h1 {
+  margin-bottom: 10px;
+}
+
+#STE {
+  float: left;
+  margin-left: 40px;
+}
+h3 {
+  width: 300px;
+  float: left;
+  display: flex;
+}
+.first {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.cv-paragraph {
+  text-align: left;
+  font-size: 16px;
+}
+p,
+ul {
+  padding-bottom: 30px;
+}
+ul {
+  list-style-type: none;
+}
+
+#nameAndRole {
+  float: right;
+  text-align: right;
+  margin-top: 30px;
+  margin-right: 40px;
+}
+#Experience {
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+}
+
+#all {
+  display: flex;
+  margin-top: 40px;
+  width: fit-content;
+  block-size: fit-content;
+}
+img {
+  width: 170px;
+  height: 20px;
+  float: left;
+  display: flex;
+  margin-left: 30px;
+}
+#when,
+#company {
+  margin: 0;
+  display: contents;
+}
+
+#role {
+  float: left;
+  margin: 0;
+  display: flex;
+}
+
+#tech {
+  margin-bottom: 15px;
+}
+
+#CR {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#description {
+  margin-top: 3px;
+}
+.exp {
+  display: flex;
+  flex-direction: column;
+}
+
+.line {
+  height: 1.2px;
+  width: 300px;
+  margin-bottom: 15px;
+  background-color: gray;
+  float: left;
+}
+.textArea {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+#btn {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media print {
+  @page {
+    padding-top: 20mm;
+    #cv {
+      padding-top: 100mm;
+    }
+  }
+
+  @page :first {
+    margin-top: 0mm;
+  }
+}
+
+@media print {
+  #cv {
+    z-index: 1;
+    background-image: none;
+    border: none;
+  }
+}
+#addTech {
+  width: 40px;
+  height: 40px;
+  float: right;
+  margin-left: 5px;
+  background-color: transparent;
+  background: transparent;
+}
+#cancel {
+  width: 40px;
+  height: 40px;
+  float: right;
+  margin-left: 5px;
+}
+@media print {
+  html,
+  body {
+    height: initial !important;
+    overflow: initial !important;
+    -webkit-print-color-adjust: exact !important;
+    background-repeat: repeat;
+    color-adjust: exact !important;
+  }
+  p,
+  ul,
+  h3,
+  h4,
+  i {
+    font-size: 12px;
+  }
+}
+
+@page {
+  size: auto;
+  background-image: url("/public/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.page-break-content {
+  border-top: 20mm solid transparent;
+}
+
+.page-break-content::before {
+  content: "";
+  display: block;
+  height: 20mm;
+}
+
+@media print {
+  .pdf-container {
+    position: relative;
+    z-index: 1;
+  }
+  #header-space {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20mm;
+  }
+
+  p {
+    padding-bottom: 3mm;
+  }
+
+  .exp {
+    page-break-inside: avoid;
+    padding-top: 5mm;
+  }
+
+  .exp:first-child {
+    padding-top: 0mm;
+  }
+
+  #description {
+    margin-top: 0mm;
+    text-align: left;
+    justify-content: left;
+    float: left;
+  }
+
+  #Experience {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+  }
+}
+
+@media print {
+  .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/public/image.png");
+    background-size: contain;
+    background-repeat: repeat-y;
+    z-index: -1;
+  }
+}
+#years {
+  display: flex;
+}
+#educationForm {
+  display: flex;
+  flex-direction: column;
+}
+#inputs {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.form-group {
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+.inputField {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.year-select-wrapper {
+  position: relative;
+}
+
+.select-wrapper {
+  position: relative;
+}
+
+.options {
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  z-index: 1;
+  display: none;
+}
+
+.options.open {
+  display: block;
+}
+
+.options li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.options li:hover {
+  background-color: #f4f4f4;
+}
+
+#cancelEd {
+  width: 40px;
+  height: 40px;
+  float: right;
+}
+#addEd {
+  width: 40px;
+  height: 40px;
+  float: right;
+}
+
+#choice {
+  display: flex;
+  margin: 20px 79px;
+  flex-direction: row-reverse;
+}
+#delete-icon {
+  display: none;
+}
+
+.tech-name:hover + #delete-icon {
+  display: inline;
+  flex-direction: row-reverse;
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+  margin-left: 0px;
+}
+.technology-container {
+  display: inline-block;
+}
+
+.comma {
+  display: inline-block;
+}
+#technologiesR:hover {
+  cursor: pointer;
+  color: grey;
+}
+
+.save-icon,
+.cancel-icon {
+  background-color: #3c009d;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 30%;
+  margin-left: 10px;
+  width: 50%;
+}
+
+.save-icon:hover,
+.cancel-icon:hover {
+  background-color: #363636;
+}
+
+.save-icon-small,
+.cancel-icon-small {
+  background-color: #3c009d;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 30%;
+  margin-left: 10px;
+  width: 30%;
+  display: inline;
+  align-content: center;
+}
+
+.save-icon-small:hover,
+.cancel-icon-small:hover {
+  background-color: #363636;
+}
+
+input {
+  height: 40px;
+  border-radius: 25px;
+  background: #f3f3f3;
+  border: 1px solid #ccc;
+  padding: 0 15px;
+}
+
+.page-break {
+  display: block;
+  page-break-before: auto;
+  padding-top: 20mm;
+}
+
+.year-select-wrapper {
+  position: relative;
+}
+
+.select-wrapper {
+  position: relative;
+}
+
+.select-wrapper input[type="text"] {
+  cursor: pointer;
+}
+
+.select-wrapper .options {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1;
+}
+
+.select-wrapper.open .options {
+  display: block;
+}

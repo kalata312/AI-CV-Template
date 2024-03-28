@@ -1,0 +1,40 @@
+.search-form {
+  margin-top: 40px;
+}
+
+.find-cv {
+  background-color: #3c009d;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 5px;
+  width: 21%;
+  margin-left: 10px;
+}
+
+.find-cv:hover {
+  background-color: #a99eb2;
+  border-color: #856f8d;
+}
+
+.input-email {
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.label-input-mail {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.error-message {
+  color: red;
+}

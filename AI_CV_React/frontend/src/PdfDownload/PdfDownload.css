@@ -1,0 +1,86 @@
+.btn-download {
+  background-color: #3c009d;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 50px;
+  width: 30%;
+  margin-left: 10px;
+}
+
+.download-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-section {
+  flex: 1;
+  flex: 0 0 30%;
+  margin-top: 50px;
+  margin-right: 50px;
+  margin-left: 8%;
+  align-items: center;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  height: 100%;
+}
+
+.cv-section {
+  flex: 1;
+  margin-right: 50px;
+}
+
+.entire-cv {
+  padding: 0;
+  margin: 0;
+}
+
+.section-label-search {
+  padding-top: 20px;
+  font-weight: bold;
+}
+
+.section-label-download {
+  margin-top: 40px;
+  font-weight: bold;
+}
+
+.tabs-container {
+  font-family: Arial, sans-serif;
+  margin-top: 70px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: color 0.3s ease;
+}
+
+.tab.active {
+  color: white;
+  border-radius: 10px;
+  background-color: #3c009d;
+}
+
+.tab-content {
+  margin-top: 10px;
+}
+
+.content {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-top: none;
+}
+
+.error-message {
+  color: red;
+}

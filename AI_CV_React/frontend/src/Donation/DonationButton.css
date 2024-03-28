@@ -1,0 +1,17 @@
+.donation-btn {
+  width: 100px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  margin-right: 30px;
+  text-decoration: none;
+  color: white;
+  margin: 5px;
+  margin-left: 15px;
+}
+
+.donation-btn:hover {
+  text-decoration: underline;
+  background-color: transparent;
+}
